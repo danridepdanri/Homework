@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace Human
 {
-    class Human
+   public class Human
     {
         private string _name;
         private int _age;
-        private int _wight;
-        private string _sex;
-
+      
         public Human(string name, int age)
         {
             _name = name;
             _age = age;
-            
         }
 
+        public Human()
+        {
+        }
+
+        public int Age { get; set; }
         public void SetName(string name)
         {
             _name = name;
